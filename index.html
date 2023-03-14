@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/f846afc8a2.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Music Player</title>
+  </head>
+  <body>
+    <audio src="/songs/pullUp.mp3" id="audio"></audio>
+    <div class="music-player">
+      <!-- btn container -->
+      <div class="control-btns">
+        <div><i class="fa-solid fa-shuffle btn" id="shuffle"></i></div>
+
+        <div><i class="fa-solid fa-backward btn" id="rewind"></i></div>
+
+        <div><i class="fa-solid fa-play btn" id="play"></i></div>
+
+        <div><i class="fa-solid fa-forward btn" id="forward"></i></div>
+
+        <div><i class="fa-solid fa-repeat btn" id="repeat"></i></div>
+      </div>
+
+      <!-- Progress container/music info/ where the magic happens (javascript) -->
+      <div class="album-container">
+        <div class="album-img">
+          <img
+            src="/images/48d167b4.png"
+            alt="slime season 2 album cover"
+            height="70"
+            width="70"
+            id="img"
+          />
+        </div>
+
+        <div class="music-info">
+          <div class="song-name">
+            <p id="song">pull up on a kid</p>
+          </div>
+          <div class="artist-info">
+            <p id="artist-name">young thug</p>
+          </div>
+
+          <div class="progress-container">
+            <div class="progress"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="features">
+        <div>
+          <i class="fa-brands fa-bluetooth-b" id="bluetooth"></i>
+        </div>
+      </div>
+
+      <!-- end of music container -->
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
